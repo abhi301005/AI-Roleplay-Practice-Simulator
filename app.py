@@ -264,12 +264,12 @@ with st.sidebar:
             disabled=st.session_state.started
         )
 
-    with st.expander("🛠 Engine Settings", expanded=False):
-        model = st.text_input(
-            "Ollama Model",
-            value="llama3.2",
-            disabled=st.session_state.started,
-            help="Ensure Ollama is running locally."
+    with st.expander("⚒ Engine Settings", expanded=False):
+    model = st.text_input(
+        "Groq Cloud Model",
+        value="openai/gpt-oss-20b",
+        disabled=st.session_state.started,
+        help="Groq cloud model used for online AI responses."
         )
 
     st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
