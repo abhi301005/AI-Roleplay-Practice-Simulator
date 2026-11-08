@@ -264,12 +264,12 @@ with st.sidebar:
             disabled=st.session_state.started
         )
 
-    with st.expander("⚒ Engine Settings", expanded=False):
-    model = st.text_input(
-        "Groq Cloud Model",
-        value="openai/gpt-oss-20b",
-        disabled=st.session_state.started,
-        help="Groq cloud model used for online AI responses."
+    with st.expander("🛠 Engine Settings", expanded=False):
+        model = st.text_input(
+            "Groq Cloud Model",
+            value="openai/gpt-oss-20b",
+            disabled=st.session_state.started,
+            help="Groq cloud model used for online AI responses."
         )
 
     st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
@@ -313,7 +313,7 @@ with header_left:
         <span class="info-pill">🎯 {scenario}</span>
         <span class="info-pill">⚡ {difficulty}</span>
         <span class="info-pill">🧠 {personality}</span>
-        <span class="info-pill">🤖 {model}</span>
+        <span class="info-pill">⚡ {model}</span>
     </div>
     """, unsafe_allow_html=True)
 
